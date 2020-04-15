@@ -1,0 +1,29 @@
+{
+  "name": "telegram_rss",
+  "version": "0.0.1",
+  "description": "convert public telegram channel to rss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veetaw/telegram_rss.git"
+  },
+  "keywords": [
+    "telegram",
+    "rss",
+    "converter"
+  ],
+  "author": "Vito <vitopiegari01@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/veetaw/telegram_rss/issues"
+  },
+  "homepage": "https://github.com/veetaw/telegram_rss#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "axios": "0.19.2"
+  }
+}

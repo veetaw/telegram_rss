@@ -1,4 +1,4 @@
-const Message = require("./message.js");
+const Message = require("./Message.js");
 const axios = require("axios").default;
 const cheerio = require("cheerio");
 

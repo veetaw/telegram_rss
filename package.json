@@ -23,7 +23,11 @@
   },
   "homepage": "https://github.com/veetaw/telegram_rss#readme",
   "dependencies": {
+    "axios": "0.19.2",
     "cheerio": "^1.0.0-rc.3",
-    "axios": "0.19.2"
+    "rss-generator": "0.0.3"
+  },
+  "devDependencies": {
+    "jasmine": "^3.5.0"
   }
 }

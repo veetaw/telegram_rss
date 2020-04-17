@@ -3,6 +3,7 @@ const axios = require("axios").default;
 const cheerio = require("cheerio");
 
 class Channel {
+  // TODO: handle empty/bad username passed
   constructor(username) {
     this.username = username;
     this.BASE_URL = "https://t.me/";
@@ -32,7 +33,7 @@ class Channel {
   
   getMessage(id) {
     return axios
-      .get(BASE_URL + CHANNEL_USERNAME + "/" + id + "?embed=true")
+      .get(this.BASE_URL + this.username + "/" + id + "?embed=true")
       .then((response) => {
         if (response.status == 200) {
           const message = new Message();
@@ -54,7 +55,7 @@ class Channel {
           message.channel = this;
           messsage.id = id;
 
-          return result;
+          return messsage;
         }
       })
       .catch((error) => {
